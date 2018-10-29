@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6C0F8B2-3EB1-405B-AB2A-73E94D7451D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaAdministracionSalonBelleza</RootNamespace>
+    <AssemblyName>SistemaAdministracionSalonBelleza</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministradorAplication\Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorAplication\Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorAplication\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorAplication\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministradorAplication\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministradorAplication\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaAdvertencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaAdvertencias.designer.cs">
+      <DependentUpon>AlertaAdvertencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaError.designer.cs">
+      <DependentUpon>AlertaError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alertas\AlertaExitoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alertas\AlertaExitoso.designer.cs">
+      <DependentUpon>AlertaExitoso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMenuPrincipal.designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seccion.cs" />
+    <EmbeddedResource Include="AdministradorAplication\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorAplication\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministradorAplication\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaAdvertencias.resx">
+      <DependentUpon>AlertaAdvertencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaError.resx">
+      <DependentUpon>AlertaError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alertas\AlertaExitoso.resx">
+      <DependentUpon>AlertaExitoso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Recursos\btn_ingresar_log1.psd" />
+    <None Include="Recursos\Manual Programación Lógica.pdf" />
+    <None Include="Recursos\SistemaFacturacion.application" />
+    <None Include="Recursos\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{bc55e004-6577-4ab8-adb0-5237aae38736}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{d37b44ee-a103-49e5-9be5-a5b46f9c0f29}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\1459982766_malecostume.png" />
+    <Content Include="Recursos\1462226097_7.png" />
+    <Content Include="Recursos\1463613750_finance-10.png" />
+    <Content Include="Recursos\1463948534_23.png" />
+    <Content Include="Recursos\1463948599_document_graph.png" />
+    <Content Include="Recursos\1463948616_document.png" />
+    <Content Include="Recursos\1463948652_exit.png" />
+    <Content Include="Recursos\1464123397_Add-Male-User.png" />
+    <Content Include="Recursos\1464123509_Add-Male-User.png" />
+    <Content Include="Recursos\1464123645_floppy_disk_save.png" />
+    <Content Include="Recursos\1464125492_Find.png" />
+    <Content Include="Recursos\1464125518_Find.png" />
+    <Content Include="Recursos\1464125557_Search.png" />
+    <Content Include="Recursos\1464125576_Search.png" />
+    <Content Include="Recursos\1464125641_Delete.png" />
+    <Content Include="Recursos\1464125670_Check.png" />
+    <Content Include="Recursos\1464125692_Log Out.png" />
+    <Content Include="Recursos\1464125726_edit-clear.png" />
+    <Content Include="Recursos\1464144780_calculator.png" />
+    <Content Include="Recursos\1464204216_pen_stroke_sketch_doodle_lineart_212.png" />
+    <Content Include="Recursos\4098757.gif" />
+    <Content Include="Recursos\accept.png" />
+    <Content Include="Recursos\add_female_user.png" />
+    <Content Include="Recursos\add_image.png" />
+    <Content Include="Recursos\administrative_tools_15497.png" />
+    <Content Include="Recursos\attach_image.png" />
+    <Content Include="Recursos\basketball.png" />
+    <Content Include="Recursos\book_search.png" />
+    <Content Include="Recursos\boss_man-128.png" />
+    <Content Include="Recursos\btn_cerrar.png" />
+    <Content Include="Recursos\btn_ingresar.png" />
+    <Content Include="Recursos\btn_ingresar2_log1.png" />
+    <Content Include="Recursos\btn_ingresar_log1.png" />
+    <Content Include="Recursos\btn_min.png" />
+    <Content Include="Recursos\buscador.png" />
+    <Content Include="Recursos\Buscar.png" />
+    <Content Include="Recursos\CategoriaImg.jpg" />
+    <Content Include="Recursos\cerrar.png" />
+    <Content Include="Recursos\chat.png" />
+    <Content Include="Recursos\chocolate-munecos-receta.jpg" />
+    <Content Include="Recursos\clientes.png" />
+    <Content Include="Recursos\compras.png" />
+    <Content Include="Recursos\configure_user_16726.png" />
+    <Content Include="Recursos\cronometro.png" />
+    <Content Include="Recursos\cronometro2.png" />
+    <Content Include="Recursos\databaseprocess_basededatos_12922.png" />
+    <Content Include="Recursos\delete.png" />
+    <Content Include="Recursos\delete1.png" />
+    <Content Include="Recursos\descarga.jpg" />
+    <Content Include="Recursos\editar.png" />
+    <Content Include="Recursos\eliminar.png" />
+    <Content Include="Recursos\empleados.png" />
+    <Content Include="Recursos\estadisticas.jpg" />
+    <Content Include="Recursos\estadisticas2.png" />
+    <Content Include="Recursos\facebook.png" />
+    <Content Include="Recursos\faq_question_help_15622.png" />
+    <Content Include="Recursos\female_male_users.png" />
+    <Content Include="Recursos\Fondo.png" />
+    <Content Include="Recursos\fondo_login2.jpg" />
+    <Content Include="Recursos\foto_candado.jpg" />
+    <Content Include="Recursos\gmail.png" />
+    <Content Include="Recursos\help.png" />
+    <Content Include="Recursos\home.png" />
+    <Content Include="Recursos\ICONOFIN.png" />
+    <Content Include="Recursos\ic_attach_money.ico" />
+    <Content Include="Recursos\if_agt_utilities_17828.png" />
+    <Content Include="Recursos\if_hwbrowser_24031 %281%29.png" />
+    <Content Include="Recursos\image.png" />
+    <Content Include="Recursos\images %281%29.jpg" />
+    <Content Include="Recursos\images %282%29.jpg" />
+    <Content Include="Recursos\images %283%29.jpg" />
+    <Content Include="Recursos\images %284%29.jpg" />
+    <Content Include="Recursos\images %285%29.jpg" />
+    <Content Include="Recursos\images %286%29.jpg" />
+    <Content Include="Recursos\images.jpg" />
+    <Content Include="Recursos\IMO2.png" />
+    <Content Include="Recursos\instagram.png" />
+    <Content Include="Recursos\itinerario.png" />
+    <Content Include="Recursos\key.png" />
+    <Content Include="Recursos\login1.png" />
+    <Content Include="Recursos\login2.png" />
+    <Content Include="Recursos\loguito2.jpg" />
+    <Content Include="Recursos\marca de agua.png" />
+    <Content Include="Recursos\marca.png" />
+    <Content Include="Recursos\maxi.png" />
+    <Content Include="Recursos\minimazar.png" />
+    <Content Include="Recursos\Mobile-Menu-Icon.png" />
+    <Content Include="Recursos\new iconos\Clientes.png" />
+    <Content Include="Recursos\new iconos\compras.png" />
+    <Content Include="Recursos\new iconos\empleados.png" />
+    <Content Include="Recursos\new iconos\icon cerrar2.png" />
+    <Content Include="Recursos\new iconos\icon maximizar.png" />
+    <Content Include="Recursos\new iconos\icon minimizar.png" />
+    <Content Include="Recursos\new iconos\icon restaurar.png" />
+    <Content Include="Recursos\new iconos\pagos.png" />
+    <Content Include="Recursos\new iconos\prodcutos.png" />
+    <Content Include="Recursos\new iconos\reloj.png" />
+    <Content Include="Recursos\new iconos\ventas.png" />
+    <Content Include="Recursos\package_warning.png" />
+    <Content Include="Recursos\pagos.png" />
+    <Content Include="Recursos\paly.png" />
+    <Content Include="Recursos\perfiles-de-usuario.png" />
+    <Content Include="Recursos\prodcutos.png" />
+    <Content Include="Recursos\producto.png" />
+    <Content Include="Recursos\producto8-u945.png" />
+    <Content Include="Recursos\reglas.jpg" />
+    <Content Include="Recursos\reglas2.jpg" />
+    <Content Include="Recursos\reglas3.jpg" />
+    <Content Include="Recursos\reportes.png" />
+    <Content Include="Recursos\res.png" />
+    <Content Include="Recursos\ruler.png" />
+    <Content Include="Recursos\ruler_pencil.png" />
+    <Content Include="Recursos\save.png" />
+    <Content Include="Recursos\settings_icon-icons.com_72415 %281%29.png" />
+    <Content Include="Recursos\settings_icon-icons.com_72415.png" />
+    <Content Include="Recursos\shut_down.png" />
+    <Content Include="Recursos\souffl1.jpg" />
+    <Content Include="Recursos\stats.png" />
+    <Content Include="Recursos\venta.png" />
+    <Content Include="Recursos\ventas.png" />
+    <Content Include="Recursos\whatsapp.png" />
+    <Content Include="Recursos\youtube.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

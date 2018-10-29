@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E19DC8ED-1BB8-4E09-A412-7AEBE7CC1D8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EF_GLOBAL\articulo.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\categoria.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Ciudad.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\cliente.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\cotizacion.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\cuentas_x_cobrar.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\cuentas_x_pagar.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\detalle_cotizacion_productos.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\detalle_ingreso.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\detalle_venta.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Factura.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\FACTURA_A_IMPRIMIR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\FILL_DROP_DOWN_not_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\FILL_DROP_DOWN_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\get_client_parameter.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\GET_EMPLEADO_COMBO_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Global_Belleza_Contex.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global_Belleza_Contex.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Global_Belleza_Contex.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Global_Belleza_Contex.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global_Belleza_Contex.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\IMPRIMIR_COTIZACION_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\ingreso.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\ListaProveedores_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\MovimientosPagosYcobranzas.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Ncf_Comprovante.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\Pais.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\proveedor.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\ROLES.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\ROL_USER.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SELECT_EMPLOYEE_BY_ID_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_BUSCAR_FACTURA_X_ID_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_ARTICULOS_BUSCAR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_ARTICULOS_BUSCAR_X_CODIGO_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_ARTICULO_LOAD_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_ARTICULO_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_BUSCAR_PROVEEDOR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_CATEGORIA_BUSCAR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_Categoria_LOAD_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_CLIENTES_BUSCAR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\sp_get_clientes_deudores_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_CLIENTES_LOAD_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_CLIENTE_CXC_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_CLIENTE_DEUDA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_COMBOBOX_CATEGORIA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_COMBOBOX_CLIENTE_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_COMBOBOX_PROVEEDOR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_DROPDOWN_DERMOGRAFIA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_EMPLOYEES_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_PROVEEDOR_BUSCAR_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_PROVEEDOR_LOAD_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_ROLL_DROP_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\sp_get_searche_client_pagos_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_USER_BY_NAME_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_VENTAS_DEL_DIA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_GET_VENTAS_DEL_MES_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\SP_TIPO_FACTURA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\trabajador.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\USERS.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\UsuarioTrabajador.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\venta.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\VENTAS_DEL_DIA_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\VENTAS_DEL_MES_Result.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\VW_CLIENTES_LOAD.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\VW_COTIZACIONES.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\wv_get_cliente_deuda.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\wv_get_employees.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF_GLOBAL\wv_usuario_trabajador.cs">
+      <DependentUpon>Global_Belleza_Contex.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalRepocitory\_LoginRepocitorio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="EF_GLOBAL\Global_Belleza_Contex.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Global_Belleza_Contex.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="EF_GLOBAL\Global_Belleza_Contex.edmx.diagram">
+      <DependentUpon>Global_Belleza_Contex.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EF_GLOBAL\Global_Belleza_Contex.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Global_Belleza_Contex.Context.cs</LastGenOutput>
+      <DependentUpon>Global_Belleza_Contex.edmx</DependentUpon>
+    </Content>
+    <Content Include="EF_GLOBAL\Global_Belleza_Contex.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Global_Belleza_Contex.edmx</DependentUpon>
+      <LastGenOutput>Global_Belleza_Contex.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{bc55e004-6577-4ab8-adb0-5237aae38736}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
