@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks; 
 using System.Linq.Expressions;
 using System.Data.Entity;
+using static Data.Repocitorio.BaseRepocitory;
 
 namespace Data.Repocitorio
 {
