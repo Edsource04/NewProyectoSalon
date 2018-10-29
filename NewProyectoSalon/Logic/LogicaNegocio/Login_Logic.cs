@@ -25,7 +25,7 @@ namespace Logic.LogicaNegocio
                 return null;
             } else
             {
-                var des = Utility.Decrypt_Query(rep.Clave);
+             
                 return rep;
             }
         }

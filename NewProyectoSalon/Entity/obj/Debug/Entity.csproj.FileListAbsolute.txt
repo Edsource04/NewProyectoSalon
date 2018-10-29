@@ -1,0 +1,4 @@
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.pdb

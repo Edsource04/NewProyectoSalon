@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logic.LogicaNegocio;
-
+using Logic;
 
 namespace SistemaAdministracionSalonBelleza.AdministradorAplication
 {
@@ -19,6 +19,7 @@ namespace SistemaAdministracionSalonBelleza.AdministradorAplication
             InitializeComponent();
         }
         private Login_Logic loginLogica = new Login_Logic();
+      
         private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoginAdmin admin = new AdministradorAplication.LoginAdmin();
@@ -41,12 +42,19 @@ namespace SistemaAdministracionSalonBelleza.AdministradorAplication
         private void LoginVerificacion(string usu,string clave)
         { 
             var p = loginLogica.login(usu,clave);
-            if (p.Usuario == usu && p.Clave == clave)
+            if (p == null)
+            {
+                Alertas.AlertaAdvertencias AD = new Alertas.AlertaAdvertencias("No se Encontro Ningún Usuario Registrado");
+                AD.ShowDialog();
+                txtuser.Focus();
+            } else
+            {
+             if (p.Usuario == usu && clave == Utility.Decrypt_Query(p.Clave))
             {
                 Formularios.FrmMenuPrincipal mp = new Formularios.FrmMenuPrincipal();
                 mp.Show();
             }
-           
-        }
+            }
     }
+}
 }
