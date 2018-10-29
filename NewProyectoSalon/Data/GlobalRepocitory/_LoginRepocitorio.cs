@@ -10,7 +10,15 @@ namespace Data.GlobalRepocitory
 {
   public  class _LoginRepocitorio
     {
-        public  LoginEntity Verificar(string usu, string cla)
+        /// <summary>
+        /// Pedro Van eiker
+        /// Este metodo devuelve el Usuario
+        /// que se esta logeando
+        /// </summary>
+        /// <param name="usu">usuario</param>
+        /// <param name="cla">clave</param>
+        /// <returns></returns>
+        public LoginEntity Verificar(string usu, string cla)
         {
             var result = new LoginEntity();
 
@@ -27,6 +35,39 @@ namespace Data.GlobalRepocitory
                                      Clave=a.Clave,
                                      NombreCompleto=a.NombreCompleto,
                                      RolID=a.RolID 
+                                 }).SingleOrDefault();
+                }
+            }
+
+
+            catch (Exception e)
+            {
+                return result;
+                throw new Exception(e.Message);
+            }
+
+            return result;
+        }
+        /// <summary>
+        /// Pedro Van eiker
+        /// Este metodo devuelve el RollID
+        /// </summary>
+        /// <param name="id">Resive este parametro</param>
+        /// <returns>Devuelve un Roll</returns>
+        public RollEntity CompareRoll(int id)
+        {
+            var result = new RollEntity();
+             
+            try
+            {
+                using (var context = new GLOBAL_BELLEZAEntities())
+                {
+                    result = context.ROLES
+                                 .Where( a => a.id == id)
+                                 .Select(a => new Entity.Global_Entity.RollEntity
+                                 {
+                                    id=a.id,
+                                    Nombre=a.Nombre
                                  }).SingleOrDefault();
                 }
             }

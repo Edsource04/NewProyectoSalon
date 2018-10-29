@@ -15,7 +15,7 @@ namespace Logic.LogicaNegocio
     {
         private _LoginRepocitorio l = new _LoginRepocitorio();
 
-        public Entity.Global_Entity.LoginEntity login( string usu,string pass)
+        public Entity.Global_Entity.LoginEntity RollID_Metodo( string usu,string pass)
         {
             var claveEncrip = Utility.Encrypt_Query(pass);
             var rep= l.Verificar(usu,claveEncrip);
@@ -28,6 +28,10 @@ namespace Logic.LogicaNegocio
              
                 return rep;
             }
+        }
+        public Entity.Global_Entity.RollEntity RollID_Metodo(int id)
+        {
+            return l.CompareRoll(id);
         }
     }
 }

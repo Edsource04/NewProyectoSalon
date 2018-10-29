@@ -9,14 +9,3 @@ C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Entity.
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\EntityFramework.xml
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.pdb
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Logic.dll
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Logic.pdb
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Data.dll
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Entity.dll
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\EntityFramework.dll
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Data.pdb
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Entity.pdb
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\EntityFramework.xml
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.dll
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.pdb

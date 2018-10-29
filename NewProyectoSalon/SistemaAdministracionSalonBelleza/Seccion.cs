@@ -12,7 +12,7 @@ namespace SistemaAdministracionSalonBelleza
         
         public string nombreCompleto { get; set; }
         public int IdTrabajador { get; set; }
-        public int RollId { get; set; }
+        public string Pocision { get; set; }
 
         private static Seccion _user = null;
 
