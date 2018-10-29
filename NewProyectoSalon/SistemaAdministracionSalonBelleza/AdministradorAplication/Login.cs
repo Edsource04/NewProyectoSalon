@@ -62,13 +62,13 @@ namespace SistemaAdministracionSalonBelleza.AdministradorAplication
                 txtuser.Focus();
             } else
             {
-             if (p.Usuario == usu)
+             if (p.Usuario != usu)
             {
                     lblErrorUsuario.Visible = true;
                     txtuser.Focus();
                    
             }
-                else if(clave==Utility.Decrypt_Query(p.Clave))
+                else if(clave!=Utility.Decrypt_Query(p.Clave))
                 {
                     lblErrorPass.Visible = true;
                     txtpass.Focus();

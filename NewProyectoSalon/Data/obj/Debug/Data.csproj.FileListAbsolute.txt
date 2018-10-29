@@ -10,3 +10,15 @@ C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\EntityFr
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\Data.dll.config
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\Data.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\Data.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\Entity.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\EntityFramework.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\Entity.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\EntityFramework.xml
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Data\obj\Debug\Data.pdb
