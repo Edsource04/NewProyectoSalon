@@ -9,9 +9,10 @@ namespace SistemaAdministracionSalonBelleza
   public  class Seccion
     {
         public string Usuario { get; set; }
-        //public LogicRoll.LevelRol Rolid { get; set; }
+        
         public string nombreCompleto { get; set; }
         public int IdTrabajador { get; set; }
+        public int RollId { get; set; }
 
         private static Seccion _user = null;
 
