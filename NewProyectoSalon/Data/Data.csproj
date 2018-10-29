@@ -256,6 +256,7 @@
     </Compile>
     <Compile Include="GlobalRepocitory\_LoginRepocitorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repocitorio\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="EF_GLOBAL\Global_Belleza_Contex.edmx">
@@ -281,6 +282,7 @@
       <DependentUpon>Global_Belleza_Contex.edmx</DependentUpon>
       <LastGenOutput>Global_Belleza_Contex.cs</LastGenOutput>
     </Content>
+    <Compile Include="Repocitorio\BaseRepocitory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

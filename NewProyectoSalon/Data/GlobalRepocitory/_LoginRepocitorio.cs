@@ -22,7 +22,6 @@ namespace Data.GlobalRepocitory
         {
             var result = new LoginEntity();
 
-
             try
             {
                 using (var context = new GLOBAL_BELLEZAEntities())
@@ -71,7 +70,6 @@ namespace Data.GlobalRepocitory
                                  }).SingleOrDefault();
                 }
             }
-
 
             catch (Exception e)
             {
