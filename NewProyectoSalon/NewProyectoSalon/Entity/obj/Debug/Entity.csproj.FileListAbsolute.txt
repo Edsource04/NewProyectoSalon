@@ -2,3 +2,9 @@ C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity.pdb
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\bin\Debug\Entity.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.dll
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Entity\obj\Debug\Entity.pdb

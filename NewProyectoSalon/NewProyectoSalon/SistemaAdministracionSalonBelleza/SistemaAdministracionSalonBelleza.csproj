@@ -55,71 +55,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministradorAplication\Loading.cs">
+    <Compile Include="Administration\Loading.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdministradorAplication\Loading.Designer.cs">
+    <Compile Include="Administration\Loading.Designer.cs">
       <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdministradorAplication\Login.cs">
+    <Compile Include="Administration\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdministradorAplication\Login.Designer.cs">
+    <Compile Include="Administration\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdministradorAplication\LoginAdmin.cs">
+    <Compile Include="Administration\LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdministradorAplication\LoginAdmin.Designer.cs">
+    <Compile Include="Administration\LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alertas\AlertaAdvertencias.cs">
+    <Compile Include="Alerts\AlertaAdvertencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alertas\AlertaAdvertencias.designer.cs">
+    <Compile Include="Alerts\AlertaAdvertencias.designer.cs">
       <DependentUpon>AlertaAdvertencias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alertas\AlertaError.cs">
+    <Compile Include="Alerts\AlertaError.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alertas\AlertaError.designer.cs">
+    <Compile Include="Alerts\AlertaError.designer.cs">
       <DependentUpon>AlertaError.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alertas\AlertaExitoso.cs">
+    <Compile Include="Alerts\AlertaExitoso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alertas\AlertaExitoso.designer.cs">
+    <Compile Include="Alerts\AlertaExitoso.designer.cs">
       <DependentUpon>AlertaExitoso.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmMenuPrincipal.cs">
+    <Compile Include="Forms\Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmMenuPrincipal.designer.cs">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    <Compile Include="Forms\Customer.designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainMenu.designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seccion.cs" />
-    <EmbeddedResource Include="AdministradorAplication\Loading.resx">
+    <EmbeddedResource Include="Administration\Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdministradorAplication\Login.resx">
+    <EmbeddedResource Include="Administration\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdministradorAplication\LoginAdmin.resx">
+    <EmbeddedResource Include="Administration\LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alertas\AlertaAdvertencias.resx">
+    <EmbeddedResource Include="Alerts\AlertaAdvertencias.resx">
       <DependentUpon>AlertaAdvertencias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alertas\AlertaError.resx">
+    <EmbeddedResource Include="Alerts\AlertaError.resx">
       <DependentUpon>AlertaError.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alertas\AlertaExitoso.resx">
+    <EmbeddedResource Include="Alerts\AlertaExitoso.resx">
       <DependentUpon>AlertaExitoso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmMenuPrincipal.resx">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,10 +158,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Recursos\btn_ingresar_log1.psd" />
-    <None Include="Recursos\Manual Programación Lógica.pdf" />
-    <None Include="Recursos\SistemaFacturacion.application" />
-    <None Include="Recursos\Thumbs.db" />
+    <None Include="Resources\btn_ingresar_log1.psd" />
+    <None Include="Resources\Manual Programación Lógica.pdf" />
+    <None Include="Resources\SistemaFacturacion.application" />
+    <None Include="Resources\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -159,128 +177,128 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Recursos\1459982766_malecostume.png" />
-    <Content Include="Recursos\1462226097_7.png" />
-    <Content Include="Recursos\1463613750_finance-10.png" />
-    <Content Include="Recursos\1463948534_23.png" />
-    <Content Include="Recursos\1463948599_document_graph.png" />
-    <Content Include="Recursos\1463948616_document.png" />
-    <Content Include="Recursos\1463948652_exit.png" />
-    <Content Include="Recursos\1464123397_Add-Male-User.png" />
-    <Content Include="Recursos\1464123509_Add-Male-User.png" />
-    <Content Include="Recursos\1464123645_floppy_disk_save.png" />
-    <Content Include="Recursos\1464125492_Find.png" />
-    <Content Include="Recursos\1464125518_Find.png" />
-    <Content Include="Recursos\1464125557_Search.png" />
-    <Content Include="Recursos\1464125576_Search.png" />
-    <Content Include="Recursos\1464125641_Delete.png" />
-    <Content Include="Recursos\1464125670_Check.png" />
-    <Content Include="Recursos\1464125692_Log Out.png" />
-    <Content Include="Recursos\1464125726_edit-clear.png" />
-    <Content Include="Recursos\1464144780_calculator.png" />
-    <Content Include="Recursos\1464204216_pen_stroke_sketch_doodle_lineart_212.png" />
-    <Content Include="Recursos\4098757.gif" />
-    <Content Include="Recursos\accept.png" />
-    <Content Include="Recursos\add_female_user.png" />
-    <Content Include="Recursos\add_image.png" />
-    <Content Include="Recursos\administrative_tools_15497.png" />
-    <Content Include="Recursos\attach_image.png" />
-    <Content Include="Recursos\basketball.png" />
-    <Content Include="Recursos\book_search.png" />
-    <Content Include="Recursos\boss_man-128.png" />
-    <Content Include="Recursos\btn_cerrar.png" />
-    <Content Include="Recursos\btn_ingresar.png" />
-    <Content Include="Recursos\btn_ingresar2_log1.png" />
-    <Content Include="Recursos\btn_ingresar_log1.png" />
-    <Content Include="Recursos\btn_min.png" />
-    <Content Include="Recursos\buscador.png" />
-    <Content Include="Recursos\Buscar.png" />
-    <Content Include="Recursos\CategoriaImg.jpg" />
-    <Content Include="Recursos\cerrar.png" />
-    <Content Include="Recursos\chat.png" />
-    <Content Include="Recursos\chocolate-munecos-receta.jpg" />
-    <Content Include="Recursos\clientes.png" />
-    <Content Include="Recursos\compras.png" />
-    <Content Include="Recursos\configure_user_16726.png" />
-    <Content Include="Recursos\cronometro.png" />
-    <Content Include="Recursos\cronometro2.png" />
-    <Content Include="Recursos\databaseprocess_basededatos_12922.png" />
-    <Content Include="Recursos\delete.png" />
-    <Content Include="Recursos\delete1.png" />
-    <Content Include="Recursos\descarga.jpg" />
-    <Content Include="Recursos\editar.png" />
-    <Content Include="Recursos\eliminar.png" />
-    <Content Include="Recursos\empleados.png" />
-    <Content Include="Recursos\estadisticas.jpg" />
-    <Content Include="Recursos\estadisticas2.png" />
-    <Content Include="Recursos\facebook.png" />
-    <Content Include="Recursos\faq_question_help_15622.png" />
-    <Content Include="Recursos\female_male_users.png" />
-    <Content Include="Recursos\Fondo.png" />
-    <Content Include="Recursos\fondo_login2.jpg" />
-    <Content Include="Recursos\foto_candado.jpg" />
-    <Content Include="Recursos\gmail.png" />
-    <Content Include="Recursos\help.png" />
-    <Content Include="Recursos\home.png" />
-    <Content Include="Recursos\ICONOFIN.png" />
-    <Content Include="Recursos\ic_attach_money.ico" />
-    <Content Include="Recursos\if_agt_utilities_17828.png" />
-    <Content Include="Recursos\if_hwbrowser_24031 %281%29.png" />
-    <Content Include="Recursos\image.png" />
-    <Content Include="Recursos\images %281%29.jpg" />
-    <Content Include="Recursos\images %282%29.jpg" />
-    <Content Include="Recursos\images %283%29.jpg" />
-    <Content Include="Recursos\images %284%29.jpg" />
-    <Content Include="Recursos\images %285%29.jpg" />
-    <Content Include="Recursos\images %286%29.jpg" />
-    <Content Include="Recursos\images.jpg" />
-    <Content Include="Recursos\IMO2.png" />
-    <Content Include="Recursos\instagram.png" />
-    <Content Include="Recursos\itinerario.png" />
-    <Content Include="Recursos\key.png" />
-    <Content Include="Recursos\login1.png" />
-    <Content Include="Recursos\login2.png" />
-    <Content Include="Recursos\loguito2.jpg" />
-    <Content Include="Recursos\marca de agua.png" />
-    <Content Include="Recursos\marca.png" />
-    <Content Include="Recursos\maxi.png" />
-    <Content Include="Recursos\minimazar.png" />
-    <Content Include="Recursos\Mobile-Menu-Icon.png" />
-    <Content Include="Recursos\new iconos\Clientes.png" />
-    <Content Include="Recursos\new iconos\compras.png" />
-    <Content Include="Recursos\new iconos\empleados.png" />
-    <Content Include="Recursos\new iconos\icon cerrar2.png" />
-    <Content Include="Recursos\new iconos\icon maximizar.png" />
-    <Content Include="Recursos\new iconos\icon minimizar.png" />
-    <Content Include="Recursos\new iconos\icon restaurar.png" />
-    <Content Include="Recursos\new iconos\pagos.png" />
-    <Content Include="Recursos\new iconos\prodcutos.png" />
-    <Content Include="Recursos\new iconos\reloj.png" />
-    <Content Include="Recursos\new iconos\ventas.png" />
-    <Content Include="Recursos\package_warning.png" />
-    <Content Include="Recursos\pagos.png" />
-    <Content Include="Recursos\paly.png" />
-    <Content Include="Recursos\perfiles-de-usuario.png" />
-    <Content Include="Recursos\prodcutos.png" />
-    <Content Include="Recursos\producto.png" />
-    <Content Include="Recursos\producto8-u945.png" />
-    <Content Include="Recursos\reglas.jpg" />
-    <Content Include="Recursos\reglas2.jpg" />
-    <Content Include="Recursos\reglas3.jpg" />
-    <Content Include="Recursos\reportes.png" />
-    <Content Include="Recursos\res.png" />
-    <Content Include="Recursos\ruler.png" />
-    <Content Include="Recursos\ruler_pencil.png" />
-    <Content Include="Recursos\save.png" />
-    <Content Include="Recursos\settings_icon-icons.com_72415 %281%29.png" />
-    <Content Include="Recursos\settings_icon-icons.com_72415.png" />
-    <Content Include="Recursos\shut_down.png" />
-    <Content Include="Recursos\souffl1.jpg" />
-    <Content Include="Recursos\stats.png" />
-    <Content Include="Recursos\venta.png" />
-    <Content Include="Recursos\ventas.png" />
-    <Content Include="Recursos\whatsapp.png" />
-    <Content Include="Recursos\youtube.png" />
+    <Content Include="Resources\1459982766_malecostume.png" />
+    <Content Include="Resources\1462226097_7.png" />
+    <Content Include="Resources\1463613750_finance-10.png" />
+    <Content Include="Resources\1463948534_23.png" />
+    <Content Include="Resources\1463948599_document_graph.png" />
+    <Content Include="Resources\1463948616_document.png" />
+    <Content Include="Resources\1463948652_exit.png" />
+    <Content Include="Resources\1464123397_Add-Male-User.png" />
+    <Content Include="Resources\1464123509_Add-Male-User.png" />
+    <Content Include="Resources\1464123645_floppy_disk_save.png" />
+    <Content Include="Resources\1464125492_Find.png" />
+    <Content Include="Resources\1464125518_Find.png" />
+    <Content Include="Resources\1464125557_Search.png" />
+    <Content Include="Resources\1464125576_Search.png" />
+    <Content Include="Resources\1464125641_Delete.png" />
+    <Content Include="Resources\1464125670_Check.png" />
+    <Content Include="Resources\1464125692_Log Out.png" />
+    <Content Include="Resources\1464125726_edit-clear.png" />
+    <Content Include="Resources\1464144780_calculator.png" />
+    <Content Include="Resources\1464204216_pen_stroke_sketch_doodle_lineart_212.png" />
+    <Content Include="Resources\4098757.gif" />
+    <Content Include="Resources\accept.png" />
+    <Content Include="Resources\add_female_user.png" />
+    <Content Include="Resources\add_image.png" />
+    <Content Include="Resources\administrative_tools_15497.png" />
+    <Content Include="Resources\attach_image.png" />
+    <Content Include="Resources\basketball.png" />
+    <Content Include="Resources\book_search.png" />
+    <Content Include="Resources\boss_man-128.png" />
+    <Content Include="Resources\btn_cerrar.png" />
+    <Content Include="Resources\btn_ingresar.png" />
+    <Content Include="Resources\btn_ingresar2_log1.png" />
+    <Content Include="Resources\btn_ingresar_log1.png" />
+    <Content Include="Resources\btn_min.png" />
+    <Content Include="Resources\buscador.png" />
+    <Content Include="Resources\Buscar.png" />
+    <Content Include="Resources\CategoriaImg.jpg" />
+    <Content Include="Resources\cerrar.png" />
+    <Content Include="Resources\chat.png" />
+    <Content Include="Resources\chocolate-munecos-receta.jpg" />
+    <Content Include="Resources\clientes.png" />
+    <Content Include="Resources\compras.png" />
+    <Content Include="Resources\configure_user_16726.png" />
+    <Content Include="Resources\cronometro.png" />
+    <Content Include="Resources\cronometro2.png" />
+    <Content Include="Resources\databaseprocess_basededatos_12922.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\delete1.png" />
+    <Content Include="Resources\descarga.jpg" />
+    <Content Include="Resources\editar.png" />
+    <Content Include="Resources\eliminar.png" />
+    <Content Include="Resources\empleados.png" />
+    <Content Include="Resources\estadisticas.jpg" />
+    <Content Include="Resources\estadisticas2.png" />
+    <Content Include="Resources\facebook.png" />
+    <Content Include="Resources\faq_question_help_15622.png" />
+    <Content Include="Resources\female_male_users.png" />
+    <Content Include="Resources\Fondo.png" />
+    <Content Include="Resources\fondo_login2.jpg" />
+    <Content Include="Resources\foto_candado.jpg" />
+    <Content Include="Resources\gmail.png" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\ICONOFIN.png" />
+    <Content Include="Resources\ic_attach_money.ico" />
+    <Content Include="Resources\if_agt_utilities_17828.png" />
+    <Content Include="Resources\if_hwbrowser_24031 %281%29.png" />
+    <Content Include="Resources\image.png" />
+    <Content Include="Resources\images %281%29.jpg" />
+    <Content Include="Resources\images %282%29.jpg" />
+    <Content Include="Resources\images %283%29.jpg" />
+    <Content Include="Resources\images %284%29.jpg" />
+    <Content Include="Resources\images %285%29.jpg" />
+    <Content Include="Resources\images %286%29.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\IMO2.png" />
+    <Content Include="Resources\instagram.png" />
+    <Content Include="Resources\itinerario.png" />
+    <Content Include="Resources\key.png" />
+    <Content Include="Resources\login1.png" />
+    <Content Include="Resources\login2.png" />
+    <Content Include="Resources\loguito2.jpg" />
+    <Content Include="Resources\marca de agua.png" />
+    <Content Include="Resources\marca.png" />
+    <Content Include="Resources\maxi.png" />
+    <Content Include="Resources\minimazar.png" />
+    <Content Include="Resources\Mobile-Menu-Icon.png" />
+    <Content Include="Resources\new iconos\Clientes.png" />
+    <Content Include="Resources\new iconos\compras.png" />
+    <Content Include="Resources\new iconos\empleados.png" />
+    <Content Include="Resources\new iconos\icon cerrar2.png" />
+    <Content Include="Resources\new iconos\icon maximizar.png" />
+    <Content Include="Resources\new iconos\icon minimizar.png" />
+    <Content Include="Resources\new iconos\icon restaurar.png" />
+    <Content Include="Resources\new iconos\pagos.png" />
+    <Content Include="Resources\new iconos\prodcutos.png" />
+    <Content Include="Resources\new iconos\reloj.png" />
+    <Content Include="Resources\new iconos\ventas.png" />
+    <Content Include="Resources\package_warning.png" />
+    <Content Include="Resources\pagos.png" />
+    <Content Include="Resources\paly.png" />
+    <Content Include="Resources\perfiles-de-usuario.png" />
+    <Content Include="Resources\prodcutos.png" />
+    <Content Include="Resources\producto.png" />
+    <Content Include="Resources\producto8-u945.png" />
+    <Content Include="Resources\reglas.jpg" />
+    <Content Include="Resources\reglas2.jpg" />
+    <Content Include="Resources\reglas3.jpg" />
+    <Content Include="Resources\reportes.png" />
+    <Content Include="Resources\res.png" />
+    <Content Include="Resources\ruler.png" />
+    <Content Include="Resources\ruler_pencil.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\settings_icon-icons.com_72415 %281%29.png" />
+    <Content Include="Resources\settings_icon-icons.com_72415.png" />
+    <Content Include="Resources\shut_down.png" />
+    <Content Include="Resources\souffl1.jpg" />
+    <Content Include="Resources\stats.png" />
+    <Content Include="Resources\venta.png" />
+    <Content Include="Resources\ventas.png" />
+    <Content Include="Resources\whatsapp.png" />
+    <Content Include="Resources\youtube.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

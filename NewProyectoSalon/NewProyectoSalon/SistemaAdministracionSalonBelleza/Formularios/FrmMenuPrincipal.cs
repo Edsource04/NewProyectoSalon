@@ -18,6 +18,7 @@ namespace SistemaAdministracionSalonBelleza.Formularios
           
             InitializeComponent();
             btnEstudiante.Enabled = true;
+            Seccion s = Seccion.Instance;
         }
   
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -94,10 +95,10 @@ namespace SistemaAdministracionSalonBelleza.Formularios
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Seccion s = Seccion.Instance;
-            //lbluser.Text = s.Usuario.ToUpper();
-            //lblcorreo.Text = s.correo.ToUpper();
-
+            Seccion s = Seccion.Instance;
+            lbluser.Text = s.Usuario.ToUpper();
+            LblPosicion.Text = s.Pocision.ToUpper();
+           
             //btnlogoInicio_Click(null,e);
         }
 

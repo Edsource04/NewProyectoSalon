@@ -15,8 +15,11 @@ C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Entity.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\EntityFramework.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Data.pdb
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Data.dll.config
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\Entity.pdb
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\bin\Debug\EntityFramework.xml
-C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.csprojAssemblyReference.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.csproj.CopyComplete
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.dll
 C:\Users\Eiker\Desktop\NewProyectoSalon\NewProyectoSalon\NewProyectoSalon\Logic\obj\Debug\Logic.pdb
